@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Sign-up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="left">
+        <div class="logo">
+            <div class="trans-back">
+                <img src="odin.png" alt="">
+                <h1 class="logo-msg">Minecraft</h1>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <p class="hero-msg">
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.<br>
+                Sign up <em>now</em> to get started.
+            </p>
+            <p class="cta">
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <form action="form-handler">
+            <div class="middle">
+                <h1>Let's do this!</h1>
+                <div class="inputs">
+                    <div class="left-form">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" placeholder="Steve" id="first-name">
+                        <label for="email">EMAIL</label>
+                        <input type="text" name="email" id="email" placeholder="minecraft@nether.com">
+                        <label for="pwd">PASSWORD</label>
+                        <input type="password" name="pwd" id="pwd">
+                    </div>
+                    <div class="right-form">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" placeholder="Miner" id="last-name">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-pwd" id="confirm-pwd" oninput="checkPasswordMatch()">
+                        <span id="error-message" style="color: red; display: none;">
+                            * Passwords do not match
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <button type="submit">Create Account</button>
+                <p class="login">Already have an account? <a href="">Log in</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body, .left,
+.right, .top,
+.middle, .bottom,
+.left-form, .right-form,
+.inputs, .logo,
+.trans-back {
+    display: flex;
+}
+
+@font-face {
+    font-family: "Minecraft";
+    src: "font/Monocraft.ttc";
+}
+
+body {
+    font-family: "Minecraft", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border-radius: 10px;
+    width: 10em;
+    height: 2em;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.7);
+    background-color: #596D48;
+    color: white;
+    font-size: 2em;
+    padding: 0;
+    margin-bottom: 1em;
+    font-family: "Minecraft", sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+label {
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 0;
+}
+
+input {
+    width: 20em;
+    height: 1.5em;
+    border-radius: 5px;
+    border-color: #E5E7EB;
+    background-color: #FAF9F6;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    font-family: "Minecraft", sans-serif;
+}
+
+input[name="pwd"]:invalid,
+input[name="confirm-pwd"]:invalid {
+    border-color: red;
+}
+
+.left {
+    background-image: url(mc-image.jpg);
+    background-size: cover;
+    transform: scaleX(-1);
+    background-position: right;
+    width: 40vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: "Minecraft", sans-serif;
+    transform: scaleX(-1);
+    height: 34vh;
+    margin: 0;
+    flex: 1;
+    box-sizing: border-box;
+    align-items: flex-end;
+}
+
+.logo-msg {
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-right: 2em;
+}
+
+.trans-back {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 10vh;
+    flex: 1;
+}
+
+
+.right {
+    flex-direction: column;
+    width: 60vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.top, 
+.bottom {
+    background-color: #F2F2F2;
+}
+
+
+.top {
+    height: 34vh;
+    flex-direction: column;
+    font-size: 2rem;
+    font-family: "Minecraft";
+    justify-content: flex-end;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+
+.hero-msg, .cta {
+    width: 40vw;
+    margin: 0.5em;
+    padding: 0;
+}
+
+.middle {
+    height: 30vh;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    padding: 3em;
+    padding-left: 4em;
+    flex: 1;
+    z-index: 1;
+}
+
+.left-form,
+.right-form {
+    padding: 0;
+}
+
+
+.left-form {
+    flex-direction: column;
+    margin-right: 5em;
+}
+
+.right-form {
+    flex-direction: column;
+}
+
+.bottom {
+    padding: 2em;
+    padding-left: 3em;
+    flex-direction: column;
+    flex: 1;
+    z-index: 0;
+}
+
+.login {
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+#confirm-pwd {
+    margin-bottom: 5px;
+}
